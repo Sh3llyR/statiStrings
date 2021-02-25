@@ -48,7 +48,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-statiStrings is a strings statisctics calculator for YARA rules.
+statiStrings is a strings statistics calculator for YARA rules.
 
 The goal is to aid malware research by:
 * Finding common and unique strings within malware samples
