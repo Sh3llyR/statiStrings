@@ -124,7 +124,7 @@ After Going through the results of both clean and malicious scripts, I was able 
 * python statiStrings.py -y .\batch_commands.yar -d .\batch_samples -t p
 * Results:
 	```sh
-	{'$s_aes': '0%', '$n_ipconfig': '1%', '$s_shutdown': '5%', '$s_generic_bat_maybe_copy_itself': '3%', '$s_infinite_loop': '1%', '$n_net': '1%', '$n_copy': '3%', '$n_goto': '7%', '$n_maybe_time_change': '3%', '$s_reg_add': '5%', '$s_mem': '0%', '$s_erase': '1%', '$n_type': '4%', '$s_tskill': '1%', '$s_attrib': '3%', '$n_system': '1%', '$s_taskkill': '2%', '$n_start': '6%', '$s_cscript': '0%', '$n_echo': '16%', '$n_find': '3%', '$s_cpu_damage': '0%', '$n_exit': '5%', '$n_set': '5%', '$s_ren': '0%', '$n_bat_maybe_copy_itself': '5%', '$s_maybe_block_sites_hosts_file': '0%', '$n_del': '3%', '$n_reg': '7%', '$s_make_random_folders': '0%', '$s_sleep': '2%', '$s_move': '1%', '$s_change_mouse_settings': '0%'}
+	{'$s_maybe_block_sites_hosts_file': '0.64%', '$s_sleep': '2.55%', '$s_shutdown': '5.73%', '$s_attrib': '3.82%', '$s_change_mouse_settings': '0.64%', '$n_maybe_time_change': '3.18%', '$s_erase': '1.91%', '$s_move': '1.27%', '$n_net': '1.91%', '$s_aes': '0.64%', '$n_reg': '7.01%', '$n_system': '1.27%', '$n_set': '5.1%', '$s_cscript': '0.64%', '$n_find': '3.82%', '$s_generic_bat_maybe_copy_itself': '3.18%', '$s_cpu_damage': '0.64%', '$n_goto': '7.64%', '$s_tskill': '1.91%', '$s_ren': '0.64%', '$s_mem': '0.64%', '$n_type': '4.46%', '$s_taskkill': '2.55%', '$n_exit': '5.73%', '$n_echo': '16.56%', '$s_infinite_loop': '1.27%', '$n_start': '6.37%', '$s_make_random_folders': '0.64%', '$n_bat_maybe_copy_itself': '5.73%', '$n_ipconfig': '1.27%', '$s_reg_add': '5.1%', '$n_del': '3.82%', '$n_copy': '3.82%'}
 	Number of files scanned: 157
 	```
 
