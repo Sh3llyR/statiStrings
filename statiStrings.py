@@ -104,7 +104,8 @@ def calculate_string_occurances(compiled_rule, rule_strings, test_dir, output_ty
 
     if output_type == 'p':
         for key in strings_count.keys():
-            strings_count[key] = "{}%".format(str(int(strings_count[key] / num_scanned_files * 100)))
+            percent = strings_count[key] / num_scanned_files * 100
+            strings_count[key] = "{}%".format(str(round(percent,2)))
 
     return strings_count, num_scanned_files
 
