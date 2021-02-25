@@ -51,9 +51,9 @@
 statiStrings is a strings statisctics calculator for YARA rules.
 
 The goal is to aid malware research by:
-* Finding the common and unique strings within malware samples
-* Finding the common strings within clean files
-* Save time by finding the common characteristics of malware samples automatically
+* Finding common and unique strings within malware samples
+* Finding common strings within clean files
+* Saving time by finding the common characteristics of malware samples automatically
 
 This tool helps writing better, more precise YARA rules for malware detection and malware hunting, based on custom databases of malicious and clean files.
 
@@ -76,9 +76,10 @@ To use this tool, you must have Python installed.
 ### Installation
 
 Install yara-python
-	```sh
+   ```sh
    pip install yara
    ```
+
 Clone the repo
    ```sh
    git clone https://github.com/Sh3llyR/statiStrings.git
@@ -125,7 +126,7 @@ Results:
 	```sh
 	{'$s_aes': '0%', '$n_ipconfig': '1%', '$s_shutdown': '5%', '$s_generic_bat_maybe_copy_itself': '3%', '$s_infinite_loop': '1%', '$n_net': '1%', '$n_copy': '3%', '$n_goto': '7%', '$n_maybe_time_change': '3%', '$s_reg_add': '5%', '$s_mem': '0%', '$s_erase': '1%', '$n_type': '4%', '$s_tskill': '1%', '$s_attrib': '3%', '$n_system': '1%', '$s_taskkill': '2%', '$n_start': '6%', '$s_cscript': '0%', '$n_echo': '16%', '$n_find': '3%', '$s_cpu_damage': '0%', '$n_exit': '5%', '$n_set': '5%', '$s_ren': '0%', '$n_bat_maybe_copy_itself': '5%', '$s_maybe_block_sites_hosts_file': '0%', '$n_del': '3%', '$n_reg': '7%', '$s_make_random_folders': '0%', '$s_sleep': '2%', '$s_move': '1%', '$s_change_mouse_settings': '0%'}
 	Number of files scanned: 157
-```
+	```
 
 <!-- CONTACT -->
 ## Contact
