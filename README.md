@@ -1,13 +1,13 @@
 # statiStrings
    ```sh
-		 _        _   _ ____  _        _
-	 ___| |_ __ _| |_(_) ___|| |_ _ __(_)_ __   __ _ ___
-	/ __| __/ _` | __| \___ \| __| '__| | '_ \ / _` / __|
-	\__ \ || (_| | |_| |___) | |_| |  | | | | | (_| \__ \
-	|___/\__\__,_|\__|_|____/ \__|_|  |_|_| |_|\__, |___/
-											   |___/
-	YARA Rule Strings Statistics Calculator
-	Shelly Raban (Sh3llyR), February 2021, Version 0.1
+     _        _   _ ____  _        _
+ ___| |_ __ _| |_(_) ___|| |_ _ __(_)_ __   __ _ ___
+/ __| __/ _` | __| \___ \| __| '__| | '_ \ / _` / __|
+\__ \ || (_| | |_| |___) | |_| |  | | | | | (_| \__ \
+|___/\__\__,_|\__|_|____/ \__|_|  |_|_| |_|\__, |___/
+                                           |___/
+YARA Rule Strings Statistics Calculator
+Shelly Raban (Sh3llyR), February 2021, Version 0.1
    ```
 
 <!-- PROJECT SHIELDS -->
@@ -105,7 +105,7 @@ Clone the repo
 					  Default is s
    ```
 
-Usage example:
+### Usage example
 
 Research of common strings in malicious batch scripts:
 First, I wrote a YARA rule with many commands that were found in malicious scripts. The condition was "any of them" - very generic.
