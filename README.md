@@ -115,13 +115,13 @@ After Going through the results of both clean and malicious scripts, I was able 
 1. Group the strings of the YARA rule to suspicios ($s_...), for example tskill, and noisy ($n_...), for example echo.
 2. Create a condition for my rule that catches the malicious samples but not the clean samples, minimizing false positives.
 
-* python statiStrings.py -y batch_commands.yar -d .\batch_samples -t s
+* python statiStrings.py -y .\batch_commands.yar -d .\batch_samples -t s
 * Results:
 	```sh
 	{'$s_ren': 1, '$n_set': 8, '$s_mem': 1, '$s_reg_add': 8, '$s_taskkill': 4, '$n_exit': 9, '$s_maybe_block_sites_hosts_file': 1, '$s_move': 2, '$s_attrib': 6, '$n_copy': 6, '$n_start': 10, '$n_type': 7, '$n_echo': 26, '$n_reg': 11, '$s_aes': 1, '$s_cscript': 1, '$s_change_mouse_settings': 1, '$n_net': 3, '$n_find': 6, '$s_infinite_loop': 2, '$s_shutdown': 9, '$n_del': 6, '$n_goto': 12, '$s_generic_bat_maybe_copy_itself': 5, '$n_ipconfig': 2, '$n_maybe_time_change': 5, '$n_system': 2, '$s_tskill': 3, '$s_cpu_damage': 1, '$s_erase': 3, '$s_make_random_folders': 1, '$s_sleep': 4, '$n_bat_maybe_copy_itself': 9}
 	Number of files scanned: 157
 	```
-* python statiStrings.py -y batch_commands.yar -d .\batch_samples -t p
+* python statiStrings.py -y .\batch_commands.yar -d .\batch_samples -t p
 * Results:
 	```sh
 	{'$s_aes': '0%', '$n_ipconfig': '1%', '$s_shutdown': '5%', '$s_generic_bat_maybe_copy_itself': '3%', '$s_infinite_loop': '1%', '$n_net': '1%', '$n_copy': '3%', '$n_goto': '7%', '$n_maybe_time_change': '3%', '$s_reg_add': '5%', '$s_mem': '0%', '$s_erase': '1%', '$n_type': '4%', '$s_tskill': '1%', '$s_attrib': '3%', '$n_system': '1%', '$s_taskkill': '2%', '$n_start': '6%', '$s_cscript': '0%', '$n_echo': '16%', '$n_find': '3%', '$s_cpu_damage': '0%', '$n_exit': '5%', '$n_set': '5%', '$s_ren': '0%', '$n_bat_maybe_copy_itself': '5%', '$s_maybe_block_sites_hosts_file': '0%', '$n_del': '3%', '$n_reg': '7%', '$s_make_random_folders': '0%', '$s_sleep': '2%', '$s_move': '1%', '$s_change_mouse_settings': '0%'}
