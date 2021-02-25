@@ -90,7 +90,7 @@ Clone the repo
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-	```sh
+   ```sh
 	usage: statiStrings.py [-h] [-y YARA_RULE] [-d TEST_DIR] [-t OUTPUT_TYPE]
 
 	YARA Rule Strings Statistics Generator and Malware Research Helper
@@ -103,7 +103,7 @@ Clone the repo
 					  from the YARA rule ocuured) / p (percentage - percent of
 					  files in which each string from the YARA rule ocuured).
 					  Default is s
-	```
+   ```
 
 Usage example:
 
