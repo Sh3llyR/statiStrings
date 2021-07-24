@@ -112,7 +112,7 @@ First, I wrote a YARA rule with many commands that were found in malicious scrip
 Then, I ran this tool with the rule I wrote against a malicious scripts directory (shown in the following example).
 Finally, I ran it against a directory with clean scripts.
 After Going through the results of both clean and malicious scripts, I was able to:
-1. Group the strings of the YARA rule to suspicios ($s_...), for example tskill, and noisy ($n_...), for example echo.
+1. Group the strings of the YARA rule to suspicious ($s_...), for example tskill, and noisy ($n_...), for example echo.
 2. Create a condition for my rule that catches the malicious samples but not the clean samples, minimizing false positives.
 
 * python statiStrings.py -y .\batch_commands.yar -d .\batch_samples -t s
